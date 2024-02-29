@@ -1,0 +1,307 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Ahmed Nadeem} \\ \vspace{1pt}
+    \small 647-388-7304 • \href{mailto:ahd.nad06@gmail.com}{\underline{ahd.nad06@gmail.com}} • 
+    \href{https://www.linkedin.com/in/ahmed-nadeem-61a105182/}{\underline{LinkedIn}} •
+    \href{https://github.com/aimforbigfoot}{\underline{GitHub}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {York University}{Toronto, ON}
+      {Bachelor of Science, Major in Biomedical Sciences}{Sep. 2020 -- Present}
+    \resumeSubheading
+      {St. Robert Catholic High School}{Thornhill, ON}
+      {International Baccalaureate Program}{Sep. 2016 -- May 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experiences}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Virtual Reality (VR) Research Assistant}{July. 2021 -- Present}
+      {York University}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Presented a poster on parsing object movement from movement environments created by self-motion in depth}
+        \resumeItem{Working as a research assistant at Dr. Laurence R. Harris' Multi-sensory Laboratory}
+        \resumeItem{Currently working on a VR depth perception project}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Managing Layout Editor of the Canadian Science Fair Journal}{Mar. 2020 -- Present}
+      {Children’s Hospital of Eastern Ontario}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Working with a team of 10+ layout editors under tight deadlines to produce multiple journal volumes}
+        \resumeItem{Engineered an internal platform amalgamating features from Google Docs, Slack, and file management systems, resulting in a unified solution enhancing document accessibility, and workflow organization}
+    \resumeItemListEnd
+ 
+    \resumeSubheading
+      {Reena Social Worker}{March. 2019 -- Present}
+      {Toby and Harry Battle Developmental Centre}{Thornhill, ON}
+      \resumeItemListStart
+        \resumeItem{I led holistic care for 50+ individuals w/ disabilities, and advocated for neurodivergence}
+        \resumeItem{Facilitated activities w/ respect for accommodations, reported and calmed down aggressive individuals}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Coding YouTube Channel (NAD LABS)}{May 2020 - Present}     
+      {YouTube}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Developed multiple videos teaching the first principles of effective game design and development}
+        \resumeItem{Over 280,000+ cumulative views and 2.8k subscribers}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Game Development Club Executive}{Dec 2021 - Present}     
+      {York University}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Facilitated respectful and productive game development discussions among 30+ club members}
+        \resumeItem{Hosted live coding workshops virtually during the pandemic}
+        \resumeItem{Worked and Managed a team of 8 executives to create a collaborative workspace}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Lab Assistant at York University}{June. 2021 -- Present}
+      {York University}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Working as a lab volunteer at Dr. Anthony Scimè's Kinesiology Laboratory}
+        \resumeItem{Learned a variety of techniques such as, Western Bolting, Cell Staining, Immunofluorescence, Microscopy, Plasmid Protocol, Living Tissue Isolation in Mice, Titrations and General Buffer and Solution Creation }
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Hospital Volunteer}{June 2022 - Present}
+      {Mackenzie Richmond Hill Hospital}{Richmond Hill, ON}
+      \resumeItemListStart
+        \resumeItem{Helped guide patients and families to correct locations}
+        \resumeItem{Handled sensitive patient information while maintaining confidentiality using EPIC}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Let's Talk Science Educator}{Dec 2020 - June 2021}     
+      {York University}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Taught innovative science lessons to kids from grades 3 to 8 virtually}
+        \resumeItem{Topics of lessons ranging from water cycle, to basic chemistry}
+    \resumeItemListEnd        
+    
+    \resumeSubheading
+      {COVID-19 Research Poster}{Oct 2020 - Mar 2021}     
+      {York University}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Presented a poster at the  2021 Indicium Research Competition }
+        \resumeItem{Led a team of 4 students to understand COVID-19's spread against Canada's Climate}
+    \resumeItemListEnd    
+
+
+
+
+
+\hspace{2cm}
+    
+    \resumeSubheading
+      {Class Rep BIOL 1000}{Sep 2021 - Dec 2021}     
+      {York University}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Held 8+ hours of office hours for students in BIOL 1000 to help understand concepts }
+        \resumeItem{Created 734 flashcards, 129 practice questions resulting in better understanding of biology}
+    \resumeItemListEnd    
+    
+
+    
+    \resumeSubheading
+      {Mental Health Social Network Content Creator}{Dec 2020 - July 2021}     
+      {1544 King Street West}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Designed 15+ mental health awareness posts for Instagram and Facebook}
+    \resumeItemListEnd    
+
+
+    \resumeSubheading
+      {Easy Grade Course Guide Creator}{June 2021 - Sep 2021}
+      {2967 Dundas Street}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Authored and designed course booklets for BIOL 1000, 1001, CHEM 1000 and 1001}
+        \resumeItem{Worked collaboratively w/ reviewer, finished work timely, wrote 50+ questions to test students for each book}
+    \resumeItemListEnd
+        
+   \resumeSubheading
+      {York University Science Summer Youth Ambassador}{June. 2017 -- July 2019}
+      {York University}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Worked with kids grades 3-8 and aided in the understanding of fundamental scientific principles}
+        \resumeItem{Gave two guest lectures as a Youth Ambassador on topics such as Darwinian Evolution and Electron Orbitals}
+    \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Achievements}
+    \resumeSubHeadingListStart
+    
+
+
+      \resumeProjectHeading
+          {\textbf{Scholarships and Grants} $|$ \emph{Academics}}{2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Faculty of Science Entrance Scholarship - 2000 CAD\$}
+            \resumeItem{York University Automatic Entrance Scholarship - Renewable  - Renewed thrice - 4000 CAD\$}
+            \resumeItem{Bennett Family Entrance Scholarship -  3000 CAD\$}
+            \resumeItem{Member of Dean's Honor Role - First Class Standing With Distinction}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Science Fairs} $|$ \emph{Research, and Communication}}{2016 -- 2020}
+          \resumeItemListStart
+            \resumeItem{Silver Medalist at the Canada Wide Science Fair }
+            \resumeItem{Silver Medalist at the Sanofi Biogenius Regional Competition}
+            \resumeItem{Gold Medalist 2020 at York Region Science and Technology Fair Medalist (YRSTF) }
+            \resumeItem{Silver Medalist, 2016, 2017, 2018, 2019 at YRSTF}
+            \resumeItem{HOSA Gold Medalist in the Biomedical Innovation Original Competition, lead a team of 3 }
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{High School Awards} }{2016 -- 2020}
+          \resumeItemListStart
+            \resumeItem{Biology Award - Highest Grade 12 Biology Average }
+            \resumeItem{Theory Of Knowledge Award - Highest Epistemology Course Average}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: English, French, Urdu} \\
+     \textbf{Programming Languages}{: JavaScript, Python, GDScript, C\#, HTML/CSS, R} \\
+     \textbf{Technologies}{: Zoom, Slack, Virtual Reality, Adobe Apps, Microsoft Apps and Teams, Discord }\\
+        \textbf{Sports}{: Tennis, Swimming, Chess }
+    }}
+    
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
